@@ -3,6 +3,18 @@
  * See the file LICENSE for details.
  */
 
+const dayjs = require('dayjs');
+const isBetween = require('dayjs/plugin/isBetween');
+const isoWeek = require('dayjs/plugin/isoWeek');
+const $ = require('jquery');
+
+require('select');
+window.L = require('leaflet');
+require('leaflet.awesome-markers');
+require('leaflet.locatecontrol');
+require('suncalc');
+require('opening_hours/opening_hours');
+
 var TILES_URL = '//cartodb-basemaps-a.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png';
 var ATTRIBUTION = '<a id="daten" href="info.html">Über Wo ist Markt?</a> | ' +
                   '<a id="impressum" href="impressum-datenschutz.html">Impressum &amp; Datenschutz</a> | ' +
@@ -34,8 +46,8 @@ var todayIcon = L.AwesomeMarkers.icon({markerColor: 'darkgreen', icon: 'basket'}
 var otherIcon = L.AwesomeMarkers.icon({markerColor: 'cadetblue', icon: 'basket'});
 var unclassifiedIcon = L.AwesomeMarkers.icon({markerColor: 'darkpurple', icon: 'basket'});
 
-dayjs.extend(dayjs_plugin_isBetween);
-dayjs.extend(dayjs_plugin_isoWeek);
+dayjs.extend(isBetween);
+dayjs.extend(isoWeek);
 
 /*
  * Return 0-padded string of a number.
