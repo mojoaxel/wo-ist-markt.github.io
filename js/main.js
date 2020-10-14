@@ -3,17 +3,15 @@
  * See the file LICENSE for details.
  */
 
+const $ = require('jquery');
 const dayjs = require('dayjs');
 const isBetween = require('dayjs/plugin/isBetween');
 const isoWeek = require('dayjs/plugin/isoWeek');
-const $ = require('jquery');
-
-require('select');
-window.L = require('leaflet');
-require('leaflet.awesome-markers');
-require('leaflet.locatecontrol');
-require('suncalc');
-require('opening_hours/opening_hours');
+require('../lib/select2/select2.min.js');
+L = require('../lib/leaflet/leaflet.js');
+require('../lib/leaflet.awesome-markers/leaflet.awesome-markers.min.js');
+require('../lib/leaflet.locatecontrol/L.Control.Locate.min.js');
+require('../lib/suncalc/suncalc.js');
 
 var TILES_URL = '//cartodb-basemaps-a.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png';
 var ATTRIBUTION = '<a id="daten" href="info.html">Über Wo ist Markt?</a> | ' +
