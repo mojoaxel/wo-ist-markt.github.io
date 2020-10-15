@@ -5,6 +5,7 @@ import cssbundle from 'rollup-plugin-css-bundle';
 import copy from 'rollup-plugin-copy';
 import { uglify } from "rollup-plugin-uglify";
 import { terser } from 'rollup-plugin-terser';
+import analyze from 'rollup-plugin-analyzer'
 
 const isProduction = !process.env.ROLLUP_WATCH;
 
@@ -32,6 +33,7 @@ export default {
       }]
     }),
     isProduction && uglify(),
-    isProduction && terser()
+    isProduction && terser(),
+    analyze({ summaryOnly: true })
   ]
 };
