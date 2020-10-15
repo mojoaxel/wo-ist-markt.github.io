@@ -2,16 +2,26 @@
   "name": "wo-ist-markt",
   "version": "0.0.1",
   "dependencies": {
+    "country-language": "^0.1.7",
     "dayjs": "^1.9.3",
+    "i18next-client": "^1.11.4",
     "jquery": "^3.5.1",
-    "leaflet": "^1.7.1"
+    "leaflet": "^1.7.1",
+    "leaflet.awesome-markers": "^2.0.5",
+    "leaflet.locatecontrol": "^0.72.0",
+    "moment": "^2.29.1",
+    "opening_hours": "^3.5.0",
+    "select2": "^4.0.13",
+    "suncalc": "^1.8.0"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^15.1.0",
+    "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^9.0.0",
     "jasmine": "^3.0.0",
     "jshint": "~2.11.0",
     "rollup": "^2.30.0",
+    "rollup-plugin-css-bundle": "^1.0.4",
     "rollup-plugin-terser": "^7.0.2"
   },
   "repository": {

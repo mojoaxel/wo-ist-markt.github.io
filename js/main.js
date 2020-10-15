@@ -4,14 +4,22 @@
  */
 
 const $ = require('jquery');
+require('select2')($);
+
 const dayjs = require('dayjs');
 const isBetween = require('dayjs/plugin/isBetween');
 const isoWeek = require('dayjs/plugin/isoWeek');
-require('../lib/select2/select2.min.js');
-L = require('../lib/leaflet/leaflet.js');
-require('../lib/leaflet.awesome-markers/leaflet.awesome-markers.min.js');
-require('../lib/leaflet.locatecontrol/L.Control.Locate.min.js');
-require('../lib/suncalc/suncalc.js');
+
+require('leaflet/src/Leaflet');
+require('leaflet.locatecontrol');
+require('leaflet.awesome-markers');
+
+const SunCalc = require('suncalc');
+
+const opening_hours = require('opening_hours');
+require('i18next-client');
+require('moment');
+require('country-language');
 
 var TILES_URL = '//cartodb-basemaps-a.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png';
 var ATTRIBUTION = '<a id="daten" href="info.html">Über Wo ist Markt?</a> | ' +
