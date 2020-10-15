@@ -18,10 +18,8 @@ require('leaflet.locatecontrol');
 require('leaflet.awesome-markers');
 
 const opening_hours = require('opening_hours');
-require('suncalc');
-require('i18next-client');
 require('moment');
-require('country-language');
+require('i18next-client');
 
 var TILES_URL = '//cartodb-basemaps-a.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png';
 var ATTRIBUTION = '<a id="daten" href="info.html">Über Wo ist Markt?</a> | ' +

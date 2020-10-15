@@ -2,7 +2,6 @@
   "name": "wo-ist-markt",
   "version": "0.0.1",
   "dependencies": {
-    "country-language": "^0.1.7",
     "dayjs": "^1.9.3",
     "font-awesome": "^4.3.0",
     "i18next-client": "^1.11.4",
@@ -13,8 +12,7 @@
     "moment": "^2.29.1",
     "normalize.css": "^8.0.1",
     "opening_hours": "^3.5.0",
-    "select2": "^4.0.13",
-    "suncalc": "^1.8.0"
+    "select2": "^4.0.13"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^15.1.0",
