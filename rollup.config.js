@@ -14,7 +14,7 @@ export default {
     file: 'public/bundle.js',
     name: 'WoIstMarkt',
     format: 'iife',
-    sourcemap: !isProduction,
+    sourcemap: !isProduction
   },
   plugins: [
     resolve(),
